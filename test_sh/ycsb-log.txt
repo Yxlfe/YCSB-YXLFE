@@ -1,0 +1,37 @@
+----------------------------------------
+2024年 05月 08日 星期三 14:53:23 CST
+./ycsbc -load 1 -threads 10  -db blockdb -dbpath /home/db/blockdb_ycsb_test/20240508 -P /home/db/YCSB-ZC/workloads/blockdb_workloada.spec >> ycsb-log.txt
+mmap_limit: 1000
+open_read_only_file_limit: 209715
+20 options: 1
+use Block Compaction!
+write buffer: 16.00
+max file size: 16.00
+direct io: 1
+selective: 1
+num workers: 8
+---- dbname:blockdb  dbpath:/home/db/blockdb_ycsb_test/20240508 ----
+dbname:blockdb
+dboption:0
+dbpath:/home/db/blockdb_ycsb_test/20240508
+dbstatistics:false
+dbwaitforbalance:false
+fieldcount:32
+fieldlength:26
+insertproportion:0
+keylength:32
+load:1
+morerun:
+operationcount:100000
+readallfields:true
+readproportion:0
+recordcount:40000000
+requestdistribution:zipfian
+run:false
+scanproportion:0
+threadcount:10
+updateproportion:0
+workload:com.yahoo.ycsb.workloads.CoreWorkload
+----------------------------------------
+********** load result **********
+loading records:40000000  use time:3792.846 s  IOPS:10546.17 iops (94.82 us/op)
